@@ -1,0 +1,24 @@
+{
+  "name": "wax-wash-trading-volume-deduplicator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "alice to bob for 100 and bob to alice for 40. Wash is 80. Organic is 60. One direction is not wash. No market is scanned.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0",
+    "vitest": "^2.1.8"
+  }
+}

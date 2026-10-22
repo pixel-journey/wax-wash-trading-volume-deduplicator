@@ -1,0 +1,22 @@
+name: wax-wash-trading-volume-deduplicator
+trust_label: educational-reference
+version: 0.1.0
+purpose: >
+  Subtract both legs of the smaller opposite sale between the same two names.
+invariants:
+  - src/wash.ts performs no network or wallet calls.
+  - Requests in src/usecases.ts set executed to false.
+  - No use case contains a transaction.
+  - docs/PRIOR-SCOPE.md is the earlier product text and is not a behavior claim.
+do_not:
+  - Do not add a live client and keep this trust label.
+  - Do not delete docs/PRIOR-SCOPE.md.
+entrypoints:
+  logic: src/wash.ts
+  tests: src/wash.test.ts
+  demo: src/Demo.tsx
+commands:
+  test: npm test
+live_data:
+  status: untested
+  notes: No endpoint was called.
