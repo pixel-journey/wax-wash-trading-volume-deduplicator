@@ -12,4 +12,17 @@ describe("wash volume", () => {
   it("keeps a one-way sale", () => {
     expect(organic([{ seller: "alice", buyer: "bob", amount: 100 }])).toEqual({ ok: true, gross: 100, wash: 0, organic: 100 });
   });
+
+  it("counts a self-trade as wash and refuses a bad name", () => {
+    expect(organic([{ seller: "alice", buyer: "alice", amount: 10 }])).toEqual({
+      ok: true,
+      gross: 10,
+      wash: 10,
+      organic: 0,
+    });
+    expect(organic([{ seller: "Alice", buyer: "bob", amount: 10 }])).toEqual({
+      ok: false,
+      reason: "seller and buyer must be Antelope names",
+    });
+  });
 });

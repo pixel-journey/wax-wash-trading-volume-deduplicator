@@ -3,7 +3,9 @@
 **Trust label:** `educational-reference`  
 **Catalog:** [wax-ecosystem-blueprint-catalog](https://github.com/pixel-journey/wax-ecosystem-blueprint-catalog)
 
-alice to bob for 100 and bob to alice for 40. Wash is 80. Organic is 60. One direction is not wash. No market is scanned.
+alice to bob for 100 and bob to alice for 40. Wash is 80. Organic is 60. One direction is not wash. A self-trade of 10 is wash 10 and organic 0. `Alice` is refused: names are `a-z`, `1-5`, and dots, with no trim. No market is scanned. There is no clock.
+
+The course is [EDUCATION.md](./EDUCATION.md).
 
 ## What is actually in the repo
 
@@ -20,8 +22,8 @@ alice to bob for 100 and bob to alice for 40. Wash is 80. Organic is 60. One dir
 
 ## Where the neighboring idea lives
 
-A time-window flag, without amounts, lives in `wax-nft-wash-trading-pattern-flag`. This repo does not decide that a pair is suspicious. It only subtracts. The July product description is in `docs/PRIOR-SCOPE.md` and is not what this tree does.
+A time-window flag, without this integer subtraction, lives in `wax-wash-trading-deduplicator` (3600 seconds still flags, 3601 does not). `wax-nft-wash-trading-pattern-flag` is a third predicate. This repo does not decide that a pair is suspicious. It only subtracts. The July product description is in `docs/PRIOR-SCOPE.md` and is not what this tree does.
 
 ## Queries
 
-`executed` is false. This repo did not call any host. No transaction is invented.
+`executed` is false. This repo did not call any host. No transaction is invented. Amounts are not WAX transfers. This is not AtomicAssets v2 backing.
