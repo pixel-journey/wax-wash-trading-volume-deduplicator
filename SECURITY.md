@@ -9,6 +9,8 @@
 | Bad name / amount | `{ ok: false }` (no throw) |
 | Case-sensitive names | `Alice` ≠ `alice` in this lab |
 
+Example: 100 forward + 40 back → gross **140**, wash **80**, organic **60**.
+
 ## Not closed (production)
 
 | Concern | Guidance |
@@ -32,7 +34,8 @@ No market scan. No timestamps.
 
 | Sibling | Distinction |
 | --- | --- |
-| [clock-based deduplicator](https://github.com/pixel-journey/wax-wash-trading-deduplicator) | 3600s window |
+| [clock-based deduplicator](https://github.com/pixel-journey/wax-wash-trading-deduplicator) | **3600s** window |
 | [pattern flag](https://github.com/pixel-journey/wax-nft-wash-trading-pattern-flag) | Two-trade reverse predicate |
+| [velocity scatter](https://github.com/pixel-journey/wax-collection-velocity-scatter-plot) | hold/velocity quadrants |
 
 [docs.wax.io](https://docs.wax.io/).
